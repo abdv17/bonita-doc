@@ -5,7 +5,7 @@
 :::
 
 ::: warning
-Since Bonita BPM 7.3, we have made some changes in the default layout. You will have to remove `layout.css` from the page asset to make the following instructions relevant.
+Since Bonita BPM 7.3, we have made some changes in the default layout. You will have to remove `layout.css` from the page assets to make the following instructions relevant.
 :::
 
  ## Overview
@@ -161,7 +161,7 @@ If you want to import a custom layout created with a UI Designer older than vers
 3. Import the default layout and confirm that custom widgets will be overwritten  
 4. Open the CustomLayout_7.2.x Layout and remove the 3 variables _AuthorizeApplicationAPI_, _AuthorizeApplicationPageAPI_ and _AuthorizeApplicationMenuAPI_ (as shown below) 
 Those variables are responsible of the SEVERE error logs on server.  
-5. Select the iFrame widget and set the **reziseToContent** option to _yes_  
+5. Select the iFrame widget and set the **reziseToContent** option to _yes_ (this option has been removed in 7.6.0, as the iframe is now resize using CSS)
 6. Save then Export the layout (feel free to rename the layout if you want)  
 7. On Bonita Portal edit the layout and import the newly exported layout  
 8. Confirm all messages  
